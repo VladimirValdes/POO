@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POO.Clases;
+using System;
 
 namespace POO
 {
@@ -6,7 +7,8 @@ namespace POO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Cerveza cervezita = new Cerveza(15, 6.5M , 12);
+            cervezita.Fermentacion();
         }
     }
 }
