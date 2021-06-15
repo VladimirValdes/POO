@@ -7,8 +7,8 @@ namespace POO
     {
         static void Main(string[] args)
         {
-            Cerveza cervezita = new Cerveza(15, 6.5M , 12);
-            cervezita.Fermentacion();
+            Leon leoncito = new Leon();
+            leoncito.Corre(35);
         }
     }
 }

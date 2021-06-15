@@ -8,9 +8,26 @@ namespace POO.Clases
 {
     public class Leon: Carnivoro
     {
-        public void corre()
+        public string ColorCabello { get; set; }
+        private int VelocidadDefecto = 20;
+
+        public Leon()
         {
-            Console.WriteLine("El leon corre");
+
+        }
+
+        public Leon( string Nombre ):this()
+        {
+            this.Nombre = Nombre;
+        }
+        public void Corre()
+        {
+            Console.WriteLine("Corriendo"+ VelocidadDefecto);
+        }
+
+        public void Corre(int Velocidad)
+        {
+            Console.WriteLine("Corriendo"+ Velocidad);
         }
     }
 }
