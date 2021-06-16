@@ -29,5 +29,10 @@ namespace POO.Clases
         {
             Console.WriteLine("Corriendo"+ Velocidad);
         }
+
+        public override string GetNombre()
+        {
+            return "Hola soy el leon: " + Nombre;
+        }
     }
 }
