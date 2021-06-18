@@ -7,13 +7,18 @@ namespace POO
     {
         static void Main(string[] args)
         {
-            Leon leoncito = new Leon();
-            leoncito.Nombre = "LeonCabron";
-            leoncito.Corre(35);
-            Console.WriteLine(leoncito.Velocidad);
-            leoncito.Velocidad = -5;
-            Console.WriteLine(leoncito.Velocidad);
-            Console.WriteLine(leoncito.VelocidadKm);
+            Persona oMesero = new Mesero("Chuyin");
+            Persona oCliente = new Cliente("Vladi");
+            Persona oCantinero = new Cantinero("Stiven");
+
+            Bar bar1 = new Bar();
+            bar1.Entrar(oMesero);
+            bar1.Entrar(oCliente);
+            bar1.Entrar(oCantinero);
+
+
+
+
 
         }
     }
